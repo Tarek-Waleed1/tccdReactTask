@@ -2,7 +2,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  todos: [],
+  todos: JSON.parse(localStorage.getItem('todos')) || [],
 };
 
 const todoSlice = createSlice({
